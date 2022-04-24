@@ -1,0 +1,15 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+  
+
+    "OrganisationURL": "https://vedtest.crm8.dynamics.com/",
+    //you mast have to provide here application or client id from where you had get with poratl azure while registring a app
+    "Client Id": "315ba50d-600a-4db5-abc2-399b8ea646b7",
+    //same as but here you have to give client secret id
+    "ClientSecret": "BWw8Q~lS3m9T.6goW~yIxpxkTjogjz6e3F4iBaJk"
+  
+    }
+}
