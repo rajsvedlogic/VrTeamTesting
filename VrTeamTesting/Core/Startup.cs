@@ -15,7 +15,7 @@ namespace VrTeamTesting.Core
         {
 
             builder.Services.AddSingleton<Bootstrap>();
-            builder.Services.AddSingleton<IFunctionFilter, LogFilter>();
+            //builder.Services.AddSingleton<IFunctionFilter, LogFilter>();
             builder.Services.AddLogging();
 
             builder.Services.AddControllers().AddNewtonsoftJson(options =>

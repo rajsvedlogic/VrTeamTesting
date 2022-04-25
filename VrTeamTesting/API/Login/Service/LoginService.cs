@@ -58,7 +58,7 @@ namespace VrTeamTesting.API.Login.Service
 
             session.token = Utils.AuthUtils.CreateToken(session);
 
-            UpdateLoginMetadata(session.contact_id, IPAddress);
+            //UpdateLoginMetadata(session.contact_id, IPAddress);
 
             return session;
 
@@ -85,13 +85,13 @@ namespace VrTeamTesting.API.Login.Service
             return session;
         }
 
-        private async void UpdateLoginMetadata(Guid contactId, string IPAddress)
-        {
-            var contact = new Entity("contact", contactId);
-            contact["chps_lastloggedon"] = DateTime.Now;
-            contact["chps_lastloginipaddress"] = IPAddress;
+        //private async void UpdateLoginMetadata(Guid contactId, string IPAddress)
+        //{
+        //    var contact = new Entity("contact", contactId);
+        //    contact["chps_lastloggedon"] = DateTime.Now;
+        //    contact["chps_lastloginipaddress"] = IPAddress;
 
-            await dynamics.UpdateAsync(contact);
-        }
+        //    await dynamics.UpdateAsync(contact);
+        //}
     }
 }
